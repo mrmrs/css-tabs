@@ -24,18 +24,18 @@ or download the css on github and include in your project.
 .tabs-default { tab-size: 4; }
 .tabs-large   { tab-size: 8; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .tabs-none-ns    { tab-size: 0; }
   .tabs-2-ns       { tab-size: 2; }
   .tabs-default-ns { tab-size: 4; }
   .tabs-large-ns   { tab-size: 8; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .tabs-none-m    { tab-size: 0; }
   .tabs-2-m       { tab-size: 2; }
   .tabs-default-m { tab-size: 4; }
-  .tabs-large-m   { tab-size: 8; }
+@media screen and (min-width: 64em)  {
 }
 
 @include break(large) {
