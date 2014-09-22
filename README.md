@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-tabs)
 ## File Size
 
 708B tabs.css
-518B tabs.min.css
+518B tabs.min.css 
+174B minified and gzipped
 
 ## The Code
 ```
