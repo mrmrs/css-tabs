@@ -1,5 +1,6 @@
 {
   "name": "css-tabs",
+  "style": "tabs.css",
   "version": "0.0.4",
   "homepage": "http://github.com/mrmrs/css-tabs",
   "description": "Css module of single purpose classes for tabs",
