@@ -8,10 +8,10 @@
 .tabs-large   { tab-size: 8; }
 
 @media screen and (min-width: 48em) {
-  .tabs-none-ns    { tab-size: 0; }
-  .tabs-2-ns       { tab-size: 2; }
-  .tabs-default-ns { tab-size: 4; }
-  .tabs-large-ns   { tab-size: 8; }
+  .tabs-none-s    { tab-size: 0; }
+  .tabs-2-s       { tab-size: 2; }
+  .tabs-default-s { tab-size: 4; }
+  .tabs-large-s   { tab-size: 8; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
