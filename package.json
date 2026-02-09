@@ -1,38 +1,44 @@
 {
   "name": "css-tabs",
-  "style": "tabs.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-tabs",
-  "description": "Css module of single purpose classes for tabs",
+  "version": "2.0.0",
+  "description": "Functional CSS for tabs",
+  "style": "dist/tabs.css",
+  "main": "dist/tabs.css",
+  "exports": {
+    ".": "./dist/tabs.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "tabs"
+    "tabs",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-tabs": {
+  "homepage": "https://github.com/mrmrs/css-tabs",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-tabs.git"
+    "url": "https://github.com/mrmrs/css-tabs.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-tabs/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-tabs/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
