@@ -1,101 +1,84 @@
-# css-tabs 0.0.6
+# css-tabs
 
-Css module of single purpose classes for tabs
+Functional CSS for tabs
 
-#### Stats
+## Filesize
 
-192 | 16 | 16
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/tabs.css` | 709 bytes |
+| `dist/tabs.min.css` | 479 bytes (158 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-tabs
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-tabs
+```sh
+npm install css-tabs
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-tabs";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-tabs">
+<link rel="stylesheet" href="https://unpkg.com/css-tabs/dist/tabs.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   TABS
-*/
-.tabs-none { tab-size: 0; }
-.tabs-2 { tab-size: 2; }
-.tabs-default { tab-size: 4; }
-.tabs-large { tab-size: 8; }
-@media screen and (min-width: 48em) {
- .tabs-none-ns { tab-size: 0; }
- .tabs-2-ns { tab-size: 2; }
- .tabs-default-ns { tab-size: 4; }
- .tabs-large-ns { tab-size: 8; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .tabs-none-m { tab-size: 0; }
- .tabs-2-m { tab-size: 2; }
- .tabs-default-m { tab-size: 4; }
- .tabs-large-m { tab-size: 8; }
-}
-@media screen and (min-width: 64em) {
- .tabs-none-l { tab-size: 0; }
- .tabs-2-l { tab-size: 2; }
- .tabs-default-l { tab-size: 4; }
- .tabs-large-l { tab-size: 8; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-tabs/dist/tabs.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.tabs-none` | `tab-size: 0;` |
+| `.tabs-2` | `tab-size: 2;` |
+| `.tabs-default` | `tab-size: 4;` |
+| `.tabs-large` | `tab-size: 8;` |
+| `.tabs-none-s` | `tab-size: 0;` |
+| `.tabs-2-s` | `tab-size: 2;` |
+| `.tabs-default-s` | `tab-size: 4;` |
+| `.tabs-large-s` | `tab-size: 8;` |
+| `.tabs-none-m` | `tab-size: 0;` |
+| `.tabs-2-m` | `tab-size: 2;` |
+| `.tabs-default-m` | `tab-size: 4;` |
+| `.tabs-large-m` | `tab-size: 8;` |
+| `.tabs-none-l` | `tab-size: 0;` |
+| `.tabs-2-l` | `tab-size: 2;` |
+| `.tabs-default-l` | `tab-size: 4;` |
+| `.tabs-large-l` | `tab-size: 8;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.tabs-none-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/tabs.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/tabs.css` — formatted
+- `dist/tabs.min.css` — minified
 
 ## License
 
-ISC
+MIT
